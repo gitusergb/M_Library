@@ -1,6 +1,6 @@
 const express = require('express');
 const {createbook,seebook,idgetbook,updatebook,deletebook,byisbn} = require('../Controller/bookController');
-const {auth} = require('../middleware/auth.middleware');
+const {auth} = require('../Middleware/auth.middleware');
 
 const bookRouter= express.Router();
 //restricted

@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 const {connection} = require("./connection")
 const {userRouter}= require("./Routes/user.routes");
 const { bookRouter } = require('./Routes/book.routes');
-const {UserModel}= require('./Models/user.model');
+
 
 const app = express();
 app.use(express.json())
