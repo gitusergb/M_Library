@@ -1,8 +1,7 @@
 
 const cors = require('cors');
 require('dotenv').config();
-const bodyParser = require('body-parser');
-
+const dotenv = require('dotenv');
 const express = require('express');
 const mongoose = require('mongoose');
 
@@ -10,16 +9,13 @@ const {connection} = require("./connection")
 const {userRouter}= require("./Routes/user.routes");
 const { bookRouter } = require('./Routes/book.routes');
 
-
+dotenv.config();
 const app = express();
 app.use(express.json())
-
-
 app.use(cors())
-app.use(express.static('public'));
 app.use("/users",userRouter)
 app.use("/books",bookRouter)
-
+app.use(express.static('public'));
 
   const PORT = process.env.PORT || 3000;
 
