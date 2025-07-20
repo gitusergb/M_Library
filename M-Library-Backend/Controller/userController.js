@@ -167,9 +167,4 @@ const getProfile= async (req, res, next) => {
 
 ////////////////////////////////////////////////////////
 
-
-
-
-
-
 module.exports = {getUser,registerUser,loginUser, logoutUser,borrowbook ,getProfile,borrow_books,returnb};
