@@ -7,7 +7,7 @@
 - The backend should be created using Node, Express, and Mongo.
 
 ***Task 1*** : Set Up the Project
-- Create a new Node.js project.(frontend)
+- Create a new Node.js project.
 - Initialize a package.json file.
 - Install the necessary dependencies (Express.js, Mongoose, etc.).
 
